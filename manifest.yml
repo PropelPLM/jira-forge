@@ -1,0 +1,20 @@
+modules:
+  jira:issuePanel:
+    - key: propel-ui-kit-hello-world-panel
+      function: main
+      title: Paul Propel
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/6662447f-a6b0-46f3-b103-4d80f5dfb504
+  name: propel-related-ui-kit
+
+permissions:
+  scopes:
+    - "read:jira-work"
+  external:
+    fetch:
+      backend:
+        - "https://paulyb-dev-ed.my.salesforce.com"
